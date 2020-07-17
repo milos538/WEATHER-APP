@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+	overflow: hidden;
+	font-family: 'Lato', sans-serif;
+}
+body{
+	box-sizing: border-box;
+	background-image: url("../img/kisa.jpg");
+	background-position: center; 
+    background-repeat: no-repeat; 
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+#okvir{
+	/*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
+	z-index: 1;
+	visibility: hidden;
+}
+#forma{
+	text-align: center;
+	height: 10%;
+}
+#okvir input{
+	outline:0;
+	border: 0;
+	text-align: center;
+	padding:1rem;
+	margin-top: 5rem;
+	visibility: visible;
+}
+#opis{
+	width: auto;
+	height: 90%;
+	color:white;
+	text-align:center;
+}
+#gornji{
+	height: 50%;
+}
+#grad{
+	font-size:3rem;
+	margin: 3rem;
+}
+#temperatura{
+	margin:2rem;
+}
+.box{
+	display: inline-block;
+	width:45%;
+	font-size: 4rem;
+}
+.box1{
+	text-align: right;
+}
+.box2{
+	text-align: left;
+}
+#tekst{
+	font-size:1.7rem;
+}
+#slika img{
+	margin-top:2rem;
+	width:10rem;
+}
+#prognoza{
+	height: 50%;
+}
+#dani{
+	height: 50%;
+	margin-top: 4rem;
+}
+.dan{
+	display: inline-block;
+	width: 20%;
+	border-right: 1px solid white;
+	font-size:2rem;
+}
+@media only screen and (max-width: 50rem) {
+	.dan:last-child{display: none;}
+	.dan:nth-child(4){border-right: 0;}
+	.dan{width: 25%; font-size: 1.4rem;}
+}
+
+.dan span{
+	display: block;
+	padding: 1rem 0;
+}
+.maks, .min{
+	font-size:2rem;
+}
+.dan:last-child{
+	border:0;
+}
